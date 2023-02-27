@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body > * {
+    padding: 0 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    flex: 0 0 15%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #7e7e7e;
+}
+
+header a {
+    display: block;
+    text-align: center;
+}
+
+header a:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+nav {
+    flex: 1 1 75%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links li {
+    flex: 0 1 10%;
+}
+
+.nav-links li a {
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+body > *:not(footer){
+    margin-bottom: 1.5rem;
+}
+
+#gallery > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #7e7e7e;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+footer a  {
+    color: #f0f0f0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 5px;
+    text-align: start;
+}
